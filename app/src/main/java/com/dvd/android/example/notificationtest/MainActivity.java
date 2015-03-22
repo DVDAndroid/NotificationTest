@@ -55,7 +55,7 @@ public class MainActivity extends Activity {
 		heads_up = (Switch) findViewById(R.id.heads_up);
 		auto_off = (Switch) findViewById(R.id.power_off);
 
-		if (!(Build.VERSION.SDK_INT == Build.VERSION_CODES.LOLLIPOP))
+		if (!(Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP))
 			heads_up.setEnabled(false);
 		else
 			heads_up.setChecked(true);
